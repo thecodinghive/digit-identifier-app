@@ -19,11 +19,10 @@ def load_keras_model():
     This method loads our model, so that we can use it to perform predictions.
     """
     global model
-    # Only load model once
-    if not model:
-        print("------------------------>>>> loading model...")
-        # TODO: Update to your model's filename
-        model = load_model('./mnistmodel.h5')
+
+    # TODO: Update to your model's filename
+    model = load_model('./mnistmodel.h5')
+
     return model
 
 
@@ -112,7 +111,6 @@ def prepare_image(image):
 
     # return the processed image
     return image, image_display
-
 
 # Start the server
 if __name__ == "__main__":
