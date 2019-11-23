@@ -106,12 +106,13 @@ def prepare_image(image):
     # (if using CNN, this is the same as the model input image)
     image_display = image
 
-    # Convert from 28x28 image to
+    # Convert from 28x28 image to 1x784
     # NOTE: The CNN model does not need this step (comment out if using CNN model)
     image = image.reshape(1, 784)
 
     # return the processed image
     return image, image_display
+
 
 # Start the server
 if __name__ == "__main__":
