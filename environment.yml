@@ -8,3 +8,5 @@ dependencies:
   - Pillow==6.2.0
   - numpy==1.16.4
   - gunicorn==19.9.0
+  # Heroku can't find 3.10.1
+  - protobuf==3.10.0
