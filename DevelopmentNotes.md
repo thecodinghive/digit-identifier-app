@@ -17,6 +17,11 @@ Setup:
     conda env update --file environment.yml --prune
 
 
+Note that you can also create a conda env using a requirements.txt file:
+
+    conda create --name flask-digit-identifier --file requirements.txt
+
+
 # Running on Heroku
 
 After installing new packages, make sure to update `requirements.txt`:

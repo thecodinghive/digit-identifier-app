@@ -3,8 +3,8 @@ name: flask-digit-identifier
 # nomkl is needed to avoid issues deploying to Heroku
 dependencies:
   - nomkl
-  - flask
-  - keras
-  - Pillow
-  - numpy
-  - gunicorn
+  - flask==1.1.1
+  - keras==2.3.1
+  - Pillow==6.2.0
+  - numpy==1.16.4
+  - gunicorn==19.9.0
