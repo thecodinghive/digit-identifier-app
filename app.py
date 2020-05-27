@@ -20,8 +20,8 @@ def load_keras_model():
     """
     global model
 
-    # TODO: Update to your model's filename
-    model = load_model('./mnistmodel.h5')
+    # TODO: Update to your model's filename, if needed
+    model = load_model('./mnistmodel_cnn.h5')
 
     return model
 
@@ -107,7 +107,7 @@ def prepare_image(image):
 
     # Convert from 28x28 image to 1x784
     # NOTE: The CNN model does not need this step (comment out if using CNN model)
-    image = image.reshape(1, 784)
+    # image = image.reshape(1, 784)
 
     # return the processed image
     return image, image_display
